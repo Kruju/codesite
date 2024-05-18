@@ -64,6 +64,7 @@ footer {
     color: white;
     margin-top: auto; /* Pushes footer to the bottom if page content is short */
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative;
 }
 
 button {
@@ -89,8 +90,9 @@ button:hover {
 #backToTop {
     display: none; /* Hidden by default */
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 80px; /* Adjust this value to control height above footer */
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 99; /* Ensure it is above other elements */
     border: none;
     outline: none;
