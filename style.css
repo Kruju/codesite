@@ -4,12 +4,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0; /* Light background for contrast */
+    color: #333; /* Dark text color for readability */
 }
 
 header {
-    background-color: #333;
+    background-color: #4caf50; /* Green background for header */
     color: white;
     padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 header nav ul {
@@ -28,22 +31,52 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.5em;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffeb3b; /* Mustard yellow for hover effect */
 }
 
 main {
     padding: 20px;
+    background-color: white;
+    border-radius: 8px; /* Rounded corners for main content */
+    margin: 20px auto;
+    max-width: 800px; /* Centered content with max width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1, h2 {
+    color: #4caf50; /* Green for headings */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
+    background-color: #4caf50; /* Green background for footer */
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+button {
+    background-color: #ffeb3b; /* Mustard yellow for buttons */
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #fdd835; /* Darker mustard yellow for hover effect */
 }
