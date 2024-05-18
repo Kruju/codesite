@@ -6,6 +6,9 @@ body {
     padding: 0;
     background-color: #f0f0f0; /* Light background for contrast */
     color: #333; /* Dark text color for readability */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -45,6 +48,7 @@ main {
     margin: 20px auto;
     max-width: 800px; /* Centered content with max width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1; /* Ensures the main content area expands to fill available space */
 }
 
 h1, h2 {
@@ -56,9 +60,7 @@ footer {
     padding: 10px 0;
     background-color: #4caf50; /* Green background for footer */
     color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: auto; /* Pushes footer to the bottom if page content is short */
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
